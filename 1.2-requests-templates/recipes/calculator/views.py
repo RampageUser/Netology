@@ -16,8 +16,17 @@ DATA = {
         'сыр, ломтик': 1,
         'помидор, ломтик': 1,
     },
-    # можете добавить свои рецепты ;)
 }
+
+def show_ingridients(request, result):
+    context = {'recipe': {}}
+    mul = int(request.GET.get('servings', 1))
+    chosen_recipe = DATA.get(result)
+    for key, value in chosen_recipe.items():
+        context['recipe'][key] = value * mul
+
+    return render(request, 'calculator/index.html', context)
+
 
 # Напишите ваш обработчик. Используйте DATA как источник данных
 # Результат - render(request, 'calculator/index.html', context)
