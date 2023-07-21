@@ -1,6 +1,6 @@
 [
   {
-    "model": "books.book",
+    "model": "books.Book",
     "pk": 1,
     "fields": {
       "name": "Война и мир",
@@ -9,12 +9,30 @@
     }
   },
   {
-    "model": "books.book",
+    "model": "books.Book",
     "pk": 2,
     "fields": {
       "name": "1984",
       "author": "Джордж Оруэл",
       "pub_date": "2016-12-06"
+    }
+  },
+  {
+    "model": "books.Book",
+    "pk": 3,
+    "fields": {
+      "name": "Скотный двор",
+      "author": "Джордж Оруэл",
+      "pub_date": "2018-09-21"
+    }
+  },
+  {
+    "model": "books.Book",
+    "pk": 4,
+    "fields": {
+      "name": "В память о прошлом земли",
+      "author": "Лю Цысинь",
+      "pub_date": "2018-09-21"
     }
   }
 ]
